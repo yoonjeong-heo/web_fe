@@ -1,20 +1,16 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
+import Router from "vue-router";
 
 import Main from "@/views/Main";
 
-Vue.use(VueRouter);
+Vue.use(Router);
 
-const routes = [
-  {
-    path: "/",
-    name: "Main",
-    component: Main,
-  },
-];
-
-const router = new VueRouter({
-  routes,
+export default new Router({
+  routes: [
+    {
+      path: "/",
+      name: "Main",
+      component: Main,
+    },
+  ],
 });
-
-export default router;
