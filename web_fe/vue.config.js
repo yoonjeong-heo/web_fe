@@ -7,9 +7,6 @@ module.exports = defineConfig({
   outputDir: path.resolve("build"),
   transpileDependencies: true,
   lintOnSave: false,
-  // chainWebpack: config => {
-  //   config.module.rules.delete('eslint');
-  // },
 
   css: {
     loaderOptions: {
